@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: GillSans;
+	src:url('/content/files/fonts/GIL.eot');/* EOT file for IE */
+}
+@font-face {
+	font-family: GillSans;
+	src:url('/content/files/fonts/GIL.TTF'); /* TTF file for CSS3 browsers */
+}
+
+body {
+	background-color:#000;
+	color:#FFF;
+	font-family: GillSans, Verdana, Geneva, sans-serif;
+}
+
+body p {
+	font-size:14px;
+	text-align:center;
+	color:#FFF;
+}
+
+body img {
+	text-decoration:none;
+	border:none;
+}
+
+.header {
+	font-family:GillSans;
+	font-size:18px;
+	font-variant:small-caps;
+	font-weight:500;
+	line-height:1.2em;
+	color:#FFF;
+}
+
+.text-link a {
+	text-decoration:underline;
+	color:#FFF;
+	font-family:GillSans;
+	font-size:16px;
+}
+
+.span_quality_text p {
+	font-size:11px;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2%;
+}
+.col:first-child { margin-left: 0; }
+.col img {
+	margin:0 auto;
+	display:block;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+/* IMAGES */
+.span_half {
+	width:100%;
+	max-width:327px;
+	height:auto;
+}
+
+.span_full img {
+	width:100%;
+	height:auto;
+}
+
+.span_quality img {
+	width:100%;
+	max-width: 274px;
+	height:auto;
+}
+
+.span_product img{
+	width:100%;
+	max-width:175px;
+	height:auto;
+	border:none;
+	padding-left:2%;
+}
+
+.span_logo img {
+	width:100%;
+	max-width:470px;
+	height:auto;
+}
+
+.span_logo_pic img {
+	width:100%;
+	max-width:274px;
+	height:auto;
+}
+
+
+/* SPANS */
+
+.span_full {
+	width:78%;
+}
+
+.span_margin {
+	width:8%;
+}
+
+.span_product {
+	width:19.5%;
+	display:block;
+	float:left;
+}
+
+.product_first {
+	margin-left:2%;
+}
+
+.span_half {
+	width:38%;
+}
+
+.span_three_quarters {
+	width:58;
+}
+
+.span_quality {
+	width:28%;
+}
+
+.span_quality_text {
+	width:48%;
+}
+
+.span_logo {
+	width:48%;
+}
+
+.span_logo_pic {
+	width:28%;
+}
+
+.span_hero {
+	background-repeat:no-repeat;
+	width:78%;
+	background-size:contain;
+}
+
+.span_text {
+	width:28%;
+	margin-left:0;
+	padding-right:1%;
+	float:right;
+}
+
+.product-text {
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	padding: 0 5px 2px 5px;
+	text-decoration:underline;
+}
+
+/* SPANS AT 640 WIDTH */
+@media only screen and (max-width: 640px) {
+	.span_margin {
+		width:8%;
+		display:none;
+	}
+	
+	.product_first {
+		margin-left: 10%;
+	}
+	.product_third {
+		margin-left:10%;
+	}
+
+	.span_full {
+		width:98%;
+	}
+
+	.span_product {
+		width:39%;
+		display:block;
+		float:left;
+	}
+
+	.span_half {
+		width:98%;
+	}
+
+	.span_three_quarters {
+		width:98%;
+	}
+	
+	.span_quality {
+		width:78%;
+		margin-left:12%;
+	}
+
+	.span_quality_text {
+		width:48%;
+		display:none;
+	}
+	.span_logo {
+		width:98%;
+	}
+
+	.span_logo_pic {
+		width:36%;
+		display:none;
+	}
+	
+	.span_hero {
+		width:98%;
+	}
+
+	.span_text {
+		width:98%;
+		margin-top:80%;
+	}
+	.product-text {
+		text-align:center;
+		font-size:14px;
+	}
+}

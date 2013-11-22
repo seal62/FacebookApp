@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*   IMAGES   */
+.span_info_full img {
+	margin:0;
+}
+
+.span_info_half img {
+	width:100%;
+	max-width:359px;
+	height:auto;
+}
+
+.span_info_text img {
+	width:100%;
+	height:auto;
+	max-width:198px;
+}
+
+.span_info_image img {
+	width:100%;
+	max-width:198px;
+	height:auto;
+}
+
+.video_container {
+	width:100%;
+}
+
+
+/*   SPANS   */
+.span_info_margin {
+	width:12%;
+}
+
+.span_info_full {
+	width:70%;
+	background-size:contain;
+}
+
+.span_info_header {
+	width:98%
+}
+
+.span_info_half {
+	width:34%;
+}
+
+.span_info_text {
+	width:100%;
+}
+
+.span_info_image {
+	width:24%;
+	float:right;
+	margin-top:0;
+}
+
+/* SPANS AT 640 WIDTH */
+@media only screen and (max-width: 640px) {
+	.span_info_margin {
+		display:none;
+	}
+	
+	.span_info_full {
+		width:98%;
+	}
+	
+	.span_info_header {
+		width:98%
+	}
+	
+	.span_info_half {
+		width:98%;
+	}
+	
+	.span_info_text {
+		width:100%;
+	}
+	
+	.span_info_image {
+		display:none;
+	}
+}
